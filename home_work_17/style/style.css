@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+form input {
+  width: 100px;
+  height: 100px;
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.checkbox3 input {
+  width: 100px;
+  height: 100px;
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+.checkbox1 label {
+  display: block;
+  width: 144px;
+  height: 63px;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.5s;
+  position: relative;
+  border: 2px solid grey;
+  line-height: 63px;
+  text-align: center;
+}
+
+.checkbox1 label::after {
+  content: "ON";
+  width: 70px;
+  height: 59px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  position: absolute;
+  transition: left 0.5s, transform 0.5s;
+  left: 70px;
+  font-size: 25px;
+}
+
+.checkbox1 input:checked + label {
+  background-color: white;
+}
+
+.checkbox1 input:checked + label::after {
+  left: 0px;
+  transform: translate(0%);
+  content: "OFF";
+  color: black;
+  font-size: 25px;
+}
+/* 
+  ==================================================== */
+
+  .checkbox2 label {
+    display: block;
+    width: 144px;
+    height: 63px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.5s;
+    position: relative;
+    border: 2px solid green;
+    line-height: 63px;
+    text-align: center;
+  }
+  
+  .checkbox2 label::after {
+    content: "ON";
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: green;
+    position: absolute;
+    transition: left 0.5s, transform 0.5s;
+    left: 70px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .checkbox2 input:checked + label {
+    background-color: white;
+  }
+  
+  .checkbox2 input:checked + label::after {
+    left: 0px;
+    transform: translate(0%);
+    content: "OFF";
+    color: white;
+    font-size: 25px;
+  }
+  /* 
+  ==================================================== */
+
+  .checkbox3 label {
+    display: block;
+    width: 129px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.5s;
+    position: relative;
+    border: 2px solid rgb(209, 209, 209);;
+    line-height: 63px;
+    text-align: center;
+  }
+  
+  .checkbox3 label::after {
+    content: "Откл";
+    width: 55px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: rgb(209, 209, 209);
+    position: absolute;
+    transition: left 0.5s, transform 0.5s;
+    left: 70px;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .checkbox3 input:checked + label {
+    background-color: white;
+  }
+  
+  .checkbox3 input:checked + label::after {
+    left: 0px;
+    transform: translate(0%);
+    content: "Вкл";
+    color: white;
+    font-size: 25px;
+  }
+  /* 
+  ==================================================== */
+
+  .checkbox4 label {
+    display: block;
+    width: 129px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.5s;
+    position: relative;
+    border: 2px solid rgb(234, 236, 104);
+    line-height: 63px;
+    text-align: center;
+  }
+  
+  .checkbox4 label::after {
+    content: "Выкл";
+    width: 55px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(234, 236, 104);
+    position: absolute;
+    transition: left 0.5s, transform 0.5s;
+    left: 70px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .checkbox4 input:checked + label {
+    background-color: white;
+  }
+  
+  .checkbox4 input:checked + label::after {
+    left: 0px;
+    transform: translate(0%);
+    content: "Вкл";
+    color: white;
+    font-size: 25px;
+  }
