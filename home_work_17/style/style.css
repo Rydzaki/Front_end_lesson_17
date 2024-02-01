@@ -42,6 +42,7 @@ form input {
   border: 2px solid grey;
   line-height: 63px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .checkbox1 label::after {
@@ -81,6 +82,7 @@ form input {
     border: 2px solid green;
     line-height: 63px;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .checkbox2 label::after {
@@ -118,15 +120,16 @@ form input {
     background-color: white;
     transition: background-color 0.5s;
     position: relative;
-    border: 2px solid rgb(209, 209, 209);;
+    border: 2px solid rgb(117, 117, 117);;
     line-height: 63px;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .checkbox3 label::after {
     content: "Откл";
     width: 55px;
-    height: 60px;
+    height: 56px;
     border-radius: 3px;
     background-color: rgb(209, 209, 209);
     position: absolute;
@@ -160,15 +163,16 @@ form input {
     background-color: white;
     transition: background-color 0.5s;
     position: relative;
-    border: 2px solid rgb(234, 236, 104);
+    border: 2px solid rgb(235, 238, 74);
     line-height: 63px;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .checkbox4 label::after {
     content: "Выкл";
     width: 55px;
-    height: 60px;
+    height: 56px;
     border-radius: 5px;
     background-color: rgb(234, 236, 104);
     position: absolute;
