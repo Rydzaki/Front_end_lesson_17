@@ -131,7 +131,7 @@ form input {
     background-color: rgb(209, 209, 209);
     position: absolute;
     transition: left 0.5s, transform 0.5s;
-    left: 70px;
+    left: 50px;
     color: white;
     font-size: 25px;
     padding-left: 10px;
